@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F9AD69;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-input {
+    min-width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+.main-input input {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.main-input input:focus {
+    outline: none;
+}
+
+.main-input input::placeholder {
+    text-align: left;
+    color: #4D7591;
+}
+
+.main-input button {
+    width: 50px;
+    height: 50px;
+    background: url('img/plus.svg');
+    background-size: contain;
+    background-color: #fff;
+}
+
+.main-input button:focus {
+    outline: none;
+}
+
+.whatToDo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.animationTask {
+    min-width: 25%;
+    background-color: #4D7591;
+    font-size: 25px;
+    margin-top: 1rem;
+    height: 50px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.newBackground {
+    background: url('img/remove.svg');
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.newCheckButton {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width:700px) {
+    .animationTask {
+        min-width: 85%;
+    }
+    .newCheckButton {
+        margin-right: 0.5rem;
+    }
+    .newBackground {
+        margin-left: 0.5rem;
+    }
+}
